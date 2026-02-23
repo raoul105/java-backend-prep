@@ -230,3 +230,12 @@ Program continues...
 ```
 
 This output demonstrates how the application handles an exception safely without crashing.
+
+## Key Takeaways
+
+- Exceptions are used to handle unexpected situations and prevent program crashes.
+- Custom exceptions make code more readable and help represent business-specific errors.
+- Separating layers (model, service, application) improves code organization and maintainability.
+- The service layer should throw exceptions, while the application layer should handle them.
+- Java packages help organize classes and avoid naming conflicts.
+- Using collections like `HashMap` can simulate data storage in small applications.
