@@ -95,3 +95,67 @@ Each package has a specific responsibility:
 - **service** → Contains business logic and operations
 - **exception** → Contains custom exception classes
 - **app** → Contains the main application entry point
+
+## Class-by-Class Explanation
+
+### 1. Account (model package)
+
+The `Account` class represents a bank account entity. It stores the account details and provides basic operations related to the account balance.
+
+Responsibilities:
+
+- Store account number, holder name, and balance
+- Provide methods to deposit and withdraw money
+- Provide getter methods to access account information
+
+This class focuses only on data and simple behavior. It does not contain validation logic. Business rules are handled in the service layer.
+
+
+### 2. BankService (service package)
+
+The `BankService` class contains the core business logic of the application.
+
+Responsibilities:
+
+- Create new accounts
+- Retrieve accounts using account number
+- Deposit money into an account
+- Withdraw money from an account
+- Validate business rules before performing operations
+
+The service uses a `HashMap` to simulate a database where account number acts as the key and the `Account` object acts as the value.
+
+If any business rule is violated, the service throws custom exceptions such as:
+
+- `InvalidAmountException`
+- `InsufficientBalanceException`
+- `AccountNotFoundException`
+
+The service layer does not handle exceptions. Instead, it throws them to the application layer.
+
+
+### 3. Custom Exceptions (exception package)
+
+The project defines three custom exceptions:
+
+- `InvalidAmountException`
+- `InsufficientBalanceException`
+- `AccountNotFoundException`
+
+Each exception extends `RuntimeException`.
+
+These exceptions represent specific error conditions related to banking operations and make the code more readable and maintainable compared to using generic exceptions.
+
+
+### 4. BankingApplication (app package)
+
+The `BankingApplication` class contains the `main` method, which is the entry point of the program.
+
+Responsibilities:
+
+- Create an instance of `BankService`
+- Call service methods to perform operations
+- Handle exceptions using try-catch blocks
+- Display user-friendly error messages
+
+This layer is responsible for catching exceptions thrown by the service layer and ensuring the program continues running safely.
