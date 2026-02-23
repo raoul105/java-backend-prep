@@ -159,3 +159,27 @@ Responsibilities:
 - Display user-friendly error messages
 
 This layer is responsible for catching exceptions thrown by the service layer and ensuring the program continues running safely.
+
+## Exception Flow in the Application
+
+The application follows a layered approach for handling exceptions.
+
+The flow of execution is:
+
+1. The `BankingApplication` (main method) calls methods from `BankService`.
+2. The `BankService` performs validation and business logic.
+3. If a rule is violated, the service throws a custom exception.
+4. The exception propagates back to the `BankingApplication`.
+5. The `BankingApplication` catches the exception using try-catch blocks.
+6. A user-friendly error message is displayed.
+7. The program continues execution safely.
+
+### Example: Withdrawal with Insufficient Balance
+
+
+This design separates responsibilities:
+
+- **Service Layer** → Detects and throws exceptions
+- **Application Layer** → Handles exceptions and interacts with the user
+
+This pattern is commonly used in real backend systems such as Spring Boot applications.
