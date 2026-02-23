@@ -74,6 +74,7 @@ This separation mimics real-world backend applications.
 
 The project follows a layered structure similar to real backend applications.
 
+```
 week1-banking-service
 └── src
     ├── app
@@ -86,6 +87,7 @@ week1-banking-service
     │   └── Account.java
     └── service
         └── BankService.java
+```
 
 Each package has a specific responsibility:
 
