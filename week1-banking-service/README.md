@@ -28,3 +28,44 @@ The main learning objectives of this project are:
 - Design a simple layered architecture (model → service → application)
 - Organize Java code using packages
 - Gain experience with professional project structure and Git workflow
+
+## Concepts Covered
+
+This project demonstrates several important Java and software engineering concepts:
+
+### 1. Exception Handling
+- Throwing exceptions using the `throw` keyword
+- Handling exceptions using `try-catch` blocks
+- Difference between normal execution flow and exceptional flow
+
+### 2. Custom Exceptions
+- Creating user-defined exceptions
+- Extending `RuntimeException`
+- Using meaningful exception types to represent business rule violations
+
+### 3. Layered Architecture
+The project is organized into multiple layers:
+
+- **Model Layer** → Represents data (Account)
+- **Service Layer** → Contains business logic (BankService)
+- **Application Layer** → Handles user interaction and exception handling
+
+This separation mimics real-world backend applications.
+
+### 4. Encapsulation and Object-Oriented Design
+- Private fields with public getters
+- Constructors to initialize objects
+- Methods representing behavior
+
+### 5. Collections Framework
+- Using `HashMap` to store and retrieve accounts
+- Key-value based data storage
+
+### 6. Package Organization
+- Grouping related classes into packages
+- Using imports to access classes across packages
+
+### 7. Git Workflow
+- Creating branches
+- Committing changes
+- Pushing code to remote repository
