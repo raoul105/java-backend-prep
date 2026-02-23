@@ -219,3 +219,14 @@ src/app/BankingApplication.java
 5. Click the **Run ▶️ button** near the `main` method.
 
 The program will execute and display output in the console.
+
+## Sample Output
+
+When running the application, the following output is produced:
+
+```
+Error: Insufficient balance
+Program continues...
+```
+
+This output demonstrates how the application handles an exception safely without crashing.
