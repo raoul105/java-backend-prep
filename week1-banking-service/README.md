@@ -69,3 +69,27 @@ This separation mimics real-world backend applications.
 - Creating branches
 - Committing changes
 - Pushing code to remote repository
+
+## Project Structure
+
+The project follows a layered structure similar to real backend applications.
+
+week1-banking-service
+└── src
+    ├── app
+    │   └── BankingApplication.java
+    ├── exception
+    │   ├── AccountNotFoundException.java
+    │   ├── InsufficientBalanceException.java
+    │   └── InvalidAmountException.java
+    ├── model
+    │   └── Account.java
+    └── service
+        └── BankService.java
+
+Each package has a specific responsibility:
+
+- **model** → Contains data classes representing business entities
+- **service** → Contains business logic and operations
+- **exception** → Contains custom exception classes
+- **app** → Contains the main application entry point
