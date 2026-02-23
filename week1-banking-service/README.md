@@ -183,3 +183,39 @@ This design separates responsibilities:
 - **Application Layer** → Handles exceptions and interacts with the user
 
 This pattern is commonly used in real backend systems such as Spring Boot applications.
+
+## How to Run the Project
+
+### Prerequisites
+
+- Java JDK installed (Java 8 or higher)
+- IntelliJ IDEA or any Java IDE
+
+### Steps to Run
+
+1. Clone the repository:
+
+```
+git clone https://github.com/raoul105/java-backend-prep.git
+cd java-backend-prep/week1-banking-service
+```
+
+2. Open the project folder in IntelliJ IDEA:
+```
+week1-banking-service
+```
+
+3. Mark the `src` folder as **Sources Root**:
+
+Right-click `src` → Mark Directory As → Sources Root
+
+4. Open the file:
+
+```
+src/app/BankingApplication.java
+```
+
+
+5. Click the **Run ▶️ button** near the `main` method.
+
+The program will execute and display output in the console.
