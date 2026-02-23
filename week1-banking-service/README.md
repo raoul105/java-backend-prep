@@ -239,3 +239,15 @@ This output demonstrates how the application handles an exception safely without
 - The service layer should throw exceptions, while the application layer should handle them.
 - Java packages help organize classes and avoid naming conflicts.
 - Using collections like `HashMap` can simulate data storage in small applications.
+
+## Future Improvements
+
+This project is intentionally simple for learning purposes. The following enhancements could be implemented to make it more realistic:
+
+- Add a user interface for interactive input instead of hardcoded values
+- Store account data in a database instead of using an in-memory HashMap
+- Implement logging for better error tracking
+- Add unit tests to verify functionality automatically
+- Introduce validation for account creation inputs
+- Convert the application into a REST API using Spring Boot
+- Implement concurrency handling for multiple users accessing accounts simultaneously
